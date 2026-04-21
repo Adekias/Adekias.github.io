@@ -21,7 +21,7 @@ $.getJSON(weatherAlertsUrl, function(data) {
     // Color all alert polygons orange, but color Severe polygons red
     style: function(feature){
       var alertColor = 'orange';
-      if (feature.properties.severity === 'Severe') alertColor = 'red';
+      if (feature.properties.severity === 'Severe') alertColor = 'cyan';
       return { color: alertColor }
     },
     // Add a popup on each feature showing the NWS alert headline
